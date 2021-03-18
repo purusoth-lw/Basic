@@ -1,0 +1,15 @@
+c program:
+===========
+1.Intro
+2.variable
+3.datatype
+4.operator
+5.conditional statements
+6.looping statements
+7.array
+8.function
+
+c++ program:
+============
+1.difference of c and c++
+2.oops
