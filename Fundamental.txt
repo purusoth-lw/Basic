@@ -1,0 +1,763 @@
+		Fundamental
+		===========
+
+Types of Language:
+==================
+
+1.high Level Language
+2.Mid Level Language
+3.Low Level Language
+
+
+1.high Level Language:
+======================
+human communication Language(Tamil,english,hindi,etc.........)
+
+2.Mid Level Language:
+=====================
+Translator.
+
+Convert high level language into low level Language.
+1.intrepreter
+2.Compilers
+
+3.Low Level Language:
+=====================
+Machine known Language(binary values---bits 0 or 1).
+
+program:
+========
+set of instruction to do a specific task.
+
+			c programming
+			=============
+
+Introduction:
+=============
+
+Develaped by Dennis Ritchie.
+when----1972 at AT&T BELL laboratories.
+
+Influenced by CPL,BCPL,ALGOL,B Language.
+CPL----Combined Programming Language
+BCPL---Basic Combined Programming Language
+B language
+
+cpl,bcpl,B language are interpreter Langauge.
+
+
+Interpreter:
+============
+Need to convert the high level into low level language.
+
+before converting the program it need to check the program have any errors.
+
+The interpreter will checks the error in line by line.
+if there any error in a line it will stop the error checking process in that  line.
+when the error was cleared then it will check next line.
+
+c Language------compiler Language
+
+Compiler:
+=========
+Need to convert the high level into low level Language.
+before converting the program it needs to check the program have any errors.
+
+once checks the whole program and display all errors.
+
+
+Structure of C program:
+=======================
+
+Documention Section
+
+preprocessor Directives(Header files)
+
+return_type main()
+{
+ statements;
+}
+
+
+Documentation Section:
+======================
+we provide some details about program.
+
+1.single line command(//):
+==========================
+	hide the details of that line.
+
+2.Multi Line Command:(/*.......*/)
+==================================
+
+/*----starting before the details
+
+	details
+
+*/---after  ending the details
+
+Variable:
+=========
+
+it is user defined text.
+
+we need store and reuse/access the data from memory.
+we need to provide a name for that data.
+the name is called variable.
+
+
+Rules:
+======
+1.a-z,A-Z are accepted
+2.case sensitive.(uppercase and lower case are not equal).
+3.start with alphabet or underscore(_).
+4.Do not start with Number.
+5.variable b/w space not allowed
+6.mixed alphabet and number are allowed.
+7.special Characters(symbol) are not allowed except underscore(_).
+8.Keyword(Reserve Word) are not allowed.
+
+Data types:
+===========
+
+syntax1:
+========
+datatype variable;//variable declaration
+variable=value;//value initialization
+
+ex:
+int a;
+a=10;
+
+syntax2:
+========
+datatype variable=value;
+
+ex:
+int a=10;
+
+syntax3:
+========
+datatype variable1=value1,variable2=value2,........variable_n=value_n;
+
+ex:
+int a=10,b=20,c;
+
+1.integer:
+==========
+to store the whole number like 1,10,10000,-299
+
+keyword: int
+
+
+Operator:
+=========
+1.Arithmatic operator
+2.Relational operator
+3.Logical operator
+4.Bitwise operator
+5.Assignment operator
+6.Increment/Decrement Operator
+7.Conditional Operator
+
+1.Arithmatic Operator:
+======================
+
+(+)-----Addition
+(-)-----Subtraction
+(*)-----Multiplication
+(/)-----Division
+(%)-----Modulas
+
+2.Relational Operator:
+======================
+(==)-----Equal To
+(!=)-----Not Equal To
+(<=)-----Less Than Or Equal TO
+(>=)-----Greater Than Or Equal TO
+(<)-----Less Than
+(>)-----Greater Than
+
+3.Logical Operator:
+===================
+(&&)----Logical AND
+(||)----Logical OR
+(!)-----LOgical NOT
+
+4.Bitwise Operator:
+===================
+(<<)----Left Shift Operator
+(>>)----Right Shift OPerator
+(~)----1's Complement
+(&)----Binary AND Operator
+(|)----Binary OR Operator
+(^)----Binary Ex-OR Operator
+
+5.Assignment Operator:
+======================
+(=)-------a=10
+(+=)-----a+=10 or a=a+10
+(-=)------a-=10 or a=a-10
+(*=)-----a*=10 or a=a*10
+(/=)-----a/=10 or a=a/10
+(%=)----a%=10 or a=a%10
+(&=)----a&=10 or a=a&10
+(|=)-----a|=10 or a=a|10
+(^=)----a^=10 or a=a^10
+(<<=)--a<<=1 or a=a<<1
+(>>=)--a>>=1 or a=a>>1
+
+6.Increment/Decrement Operator:
+===============================
+
+increment/decrement by 1
+++/--
+
+pre increment------(++a or 1+a)//first inc then print
+post increment-----(a++ or a+1)//1st print then inc
+pre decrement------(--a or -1+a)//1st dec then print
+post decrement-----(a-- or a-1)//1st print then dec
+
+7.Conditional Operator:
+========================
+
+Syntax:
+=======
+
+(condition)?True expression:False expression;
+
+conditional control statements:
+===============================
+
+1.if statements:
+================
+It will check the condition 
+when it will be true then  excutes true statements only.
+
+syntax 1:
+========
+
+if(condition)
+{
+  statements;
+}
+
+2.if-else statements:
+======================
+It will check the condition 
+when it will be true will excutes (if)true statements.
+when it will be false will excutes (else)false statements.
+
+syntax :
+=======
+
+if(condition)
+{
+  statements;
+}
+else
+{
+  statements;
+}
+
+3.ladder if-else or if-else-if statements:
+==========================================
+
+syntax:
+=======
+if(condition)
+{
+  statements;
+}
+else if(condition)
+{
+  statements;
+}
+else if(condition)
+{
+  statements;
+}
+else
+{
+  statements;
+}
+
+4.Nested if-else statements:
+============================
+
+Syntax:
+
+if(condition)
+{
+	if(condition)
+	{	
+	statemets;
+	}
+	else
+	{
+	statements;
+	}		
+}
+else
+{
+	if(condition)
+	{	
+	statemets;
+	}
+	else
+	{
+	statements;
+	}	
+}
+
+
+
+Looping Statements:
+===================
+set of process continuosly Executes till condition is fails..
+
+steps:
+======
+1.initialize
+2.condition
+3.true--->statement
+4.update(inc/dec)
+5.back to step 2
+6.false--->Exit the loop
+
+
+1.while loop:
+=============
+condition checks and then done the process.
+entry check loop.
+
+syntax:
+=======
+
+initialize;
+while(condition)
+{
+  statement;
+  update;//inc/dec
+}
+
+
+2.do-while loop:
+================
+process done then checks the Condition 
+Exit check loop.
+
+syntax:
+=======
+ini;
+do
+{
+  statement;
+  update;//inc/dec
+}while(condi);
+
+
+for loop:
+=========
+
+syntax:
+=======
+
+for(ini;condi;update)
+{
+statements;
+}
+
+Nested for loop:
+================
+
+syntax:
+=======
+
+for(ini;condi;update)
+{
+  for(ini;condi;update)
+  {
+    statements;
+  }
+}
+
+
+
+
+Array:
+======
+collection of similar type data which has stored in single variable.
+
+1,2,3,4,5,6,7,8
+
+Type  of array:
+=============
+
+1.One dimensional Array
+2.Two Dimensional Array
+
+1.One dimensional Array:
+======================
+it is a vector array
+it have only a magnitude & direction.
+    
+syntax:
+=======
+
+datatype variable[size]={number of values};
+datatype variable[]={number of values};//Empty array use if  only value initializing in early binding
+
+Example:
+
+i[5]={1,2,3,4,5};
+
+i[]={1,2,3,4,5};
+
+
+2.Two Dimensional Array:
+======================
+it is a Matrix Format.
+table format
+
+
+Syntax:
+======
+
+datatype var[row size][column size]={number of (rowsize*columnsize)  value};
+datatype var[][column size]={number of (rowsize*columnsize)  value};
+
+
+Ex:
+var[2][2]={1,2,3,4};
+var[][2]={1,2,3,4};
+var[][2]={1,2,3};
+
+
+
+Functions:
+==========
+
+function is a self contained programming structure.
+
+code reusability.
+
+Type:
+=====
+1.Function Without arguments and no return type
+2.Function With arguments and no return type
+3.Function Without arguments and with return type
+4.Function With arguments and  return type 
+
+
+called Function:
+================
+Multiple line
+outside main
+use only one time
+datatype ,variable
+server
+no semi colon 
+
+calling Function:
+=================
+one line
+inside main
+use many time
+no need to provide data type and variable
+client
+semicolon must
+value 
+
+
+1.Function Without arguments and no return type:
+================================================
+
+syntax:
+======
+void function()	//called function
+{
+  statements;
+}
+
+void main()
+{
+   function();	//calling function
+}
+
+2.Function With arguments and no return type:
+=============================================
+
+syntax:
+======
+void function(arg1,arg2...arg_n)	//called function
+{
+  statements;
+}
+
+void main()
+{
+   function(arg1,arg2,.......arg_n);	//calling function
+}
+
+3.Function Without arguments and with return type:
+==================================================
+
+syntax:
+=======
+
+returntype function()
+{
+
+return var;
+}
+
+void main()
+{
+
+var=function();
+}
+
+4.Function With arguments and  return type :
+======================================
+syntax:
+=======
+
+returntype function(arg)s
+{
+
+return var;
+}
+
+void main()
+{
+
+var=function(arg);
+}
+
+C++ Programming:
+================
+bjarne stroustrap,1979 At&t Bell Lab
+
+same c program but enhance some structure
+oops---Object Oriented Programming structure
+	1.class
+	2.Object
+	3.Abstraction
+	4.Encapsulation
+	5.Inheritance
+	6.Polymorphism
+
+same for c and c++:
+===================
+datatype,
+variable,
+operator,
+conditional statements(if,if-else,ladder if,nested if )
+looping,
+array,
+function,
+
+change for c and c++:
+=====================
+
+c program:
+==========
+save format(filename.c)
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  int a;
+  clrscr();
+
+  //int b;//error
+  printf("Enter a value : ");
+  scanf("%d",&a);
+  printf("Livewire\n");
+  printf("a : %d\n",a)
+  getch();
+}
+
+c++ program:
+============
+save format(filename.cpp)
+stdio.h--->iostream.h
+scanf()--->cin>>var
+		cin>>var1>>var2;
+printf()--->cout<<var
+		cout<<"prompt"<<var<<"\n";
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+  int a;
+  clrscr();
+  int b;//no error
+  cout<<"Enter a value : ";
+  cin>>a;
+  cout<<"Livewire\n";
+  cout<<"a : "<<a<<endl;
+
+  getch();
+}
+
+oops:
+=====
+
+object oriented programs
+
+1.class
+2.object
+3.data encapsulation
+4.data Abstraction
+5.inheritance
+6.polymorphism
+
+
+class:
+=====
+user define prototype
+
+template or blueprint
+what are detail we need to put inside the class
+
+class have no memory
+we cant access directly.
+
+syntax:
+
+class classname
+{
+  access specifier(public,private,protected)
+  var declaration;//member declaration
+
+  function()
+  {
+   statements;
+  }
+}
+
+Example:
+========
+class fruit
+{
+access specifier:
+  char name[10];
+  int qty;
+
+  void properties()
+  {
+     cout<<"It is sweet";
+  }
+}
+
+access specifier:
+=================
+1.public---------global access(main,own class,new class)
+2.private-------access only within class(own class)
+3.protected---access between classes(own class,new class)
+
+object:
+======
+object ------- instance of a class
+we need to access the class 
+
+when we create a obj for a class that time it will assign a memory for that obj.
+
+
+syntax:
+======
+
+create object:
+============
+classname objname;
+
+how to access class:
+=================
+obj_name.function_name;
+obj_name.member_declaration;
+
+3.abstraction
+==============
+providing essential information
+data hiding
+ex--object
+
+4.encapsulation:
+=================
+wrapping up to the information
+ex--class
+
+constructor:
+============
+when creates a object that the time directly access 
+constructor function
+
+syntax:
+=======
+class classname
+{
+  classname()//constructor
+  {
+
+  }
+}
+
+destructor:
+===========
+
+class  classname
+{
+  ~classname()//destructor
+   {
+	reset the statement values 
+   }
+}
+
+
+5.Inheritance
+==============
+use one class data into another class
+
+parent class/super class/base class
+child class/sub class/derive class
+
+syntax:
+=======
+class classname2:access_specifier classname1
+
+Types:
+======
+1.single inheritance
+2.multilevel inheritance
+3.multiple inheritance
+4.hierarchical inheritance
+5.hybrid inheritance
+
+
+1.single inheritance:
+=====================
+only one base class and only one sub class
+
+syntax:
+=======
+class A
+{
+
+}
+class B:public A
+{
+
+}
+
+6.polymorphism
+
+
+
+
+
+
